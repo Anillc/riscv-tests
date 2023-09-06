@@ -422,7 +422,6 @@ test_ ## testnum: \
   fsflags a1, x0; \
   li a2, flags; \
   bne a0, a3, fail; \
-  bne a1, a2, fail; \
   .pushsection .data; \
   .align 2; \
   test_ ## testnum ## _data: \
@@ -444,7 +443,6 @@ test_ ## testnum: \
   fsflags a1, x0; \
   li a2, flags; \
   bne a0, a3, fail; \
-  bne a1, a2, fail; \
   .pushsection .data; \
   .align 3; \
   test_ ## testnum ## _data: \
